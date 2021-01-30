@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
+// const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
@@ -40,7 +40,7 @@ module.exports = {
         // hotOnly: true,
     },
     plugins: [
-        new NodePolyfillPlugin(),
+        // new NodePolyfillPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new BrowserSyncPlugin({
             host: 'localhost',

@@ -6,8 +6,8 @@ export const Seventies = () => (
     </div>
 )
 
-export const Eighties = () => (
+export const Eighties = (props) => (
     <div>
-        <button>80s</button>
+        <button onClick={props.handlePick}>80s</button>
     </div>
 )
