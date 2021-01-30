@@ -7,7 +7,7 @@ const Header = (props) => (
 )
 
 Header.defaultProps = {
-    title: 'Nostalgia apps'
+    title: 'Test title switch apps'
 };
 
 export default Header

@@ -3,12 +3,19 @@ import { Seventies, Eighties } from './Decades';
 import Header from './Header';
 
 export default class App extends React.Component {
+
+    handlePick = () => {
+        console.log('test')
+    }
+
     render() {
         return (
             <div>
                 <Header />
                 <Seventies />
-                <Eighties />
+                <Eighties
+                    handlePick={this.handlePick}
+                />
             </div>
         )
     }
